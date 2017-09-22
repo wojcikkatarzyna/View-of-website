@@ -5,7 +5,7 @@ var browserSync = require('browser-sync').create();
 const autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('sass',function() {
-  return gulp.src('scss/*')
+  return gulp.src('scss/main.scss')
   .pipe(sourcemaps.init())
     .pipe(sass({
       outputStyle: 'expanded',

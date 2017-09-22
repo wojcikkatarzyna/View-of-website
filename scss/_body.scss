@@ -1,0 +1,8 @@
+body{
+    background: $background_support_color;
+    background-image: url("../images/background.jpg");
+    background-size: contain;
+    width: 100%;
+    font-family: SofiaProRegular, Arial, sans-serif;
+    color: $font_color;
+}

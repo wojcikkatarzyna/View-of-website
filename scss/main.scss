@@ -1,2 +1,10 @@
 @import "reset";
 @import "media";
+@import "fonts";
+@import "variables";
+@import "body";
+
+.container{
+    width: 74vw;
+    margin: 0 auto;
+}
