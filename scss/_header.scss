@@ -4,7 +4,7 @@ header{
     padding-top: 1vw;
     @include desktop{
         height: 170px;
-        padding-top: 30px;
+        padding-top: 25px;
     }
     h1{
         font-family: SofiaProBlack, Arial, sans-serif;
@@ -12,9 +12,9 @@ header{
         letter-spacing: 0.5vw;
         line-height: 9.75vw;
         @include desktop{
-            font-size: 41px;
-            letter-spacing: 0;
-            line-height: 25px;
+            font-size: 38px;
+            letter-spacing: 2px;
+            line-height: 38px;
         }
     }
     h2{
@@ -23,15 +23,16 @@ header{
         letter-spacing: 0.75vw;
         line-height: 7.5vw;
         @include desktop{
-            font-size: 21px;
-            letter-spacing: 0.5vw;
-            line-height: 21px;
+            font-size: 28px;
+            letter-spacing: 4px;
+            line-height: 28px;
         }
     }
     hr{
         border-top: 0.5vw solid $font_color;
         @include desktop{
-            border-top: 5px solid $font_color;
+            border-top: 2px solid $font_color;
+            margin: 13px 5px;
         }
     }
     h3{
