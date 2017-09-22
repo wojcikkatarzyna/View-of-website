@@ -1,0 +1,30 @@
+header{
+    height: 41vw;
+    text-align: center;
+    padding-top: 1vw;
+    h1{
+        font-family: SofiaProBlack, Arial, sans-serif;
+        font-size: 9.75vw;
+        letter-spacing: 0.5vw;
+        line-height: 9.75vw;
+    }
+    h2{
+        font-family: SofiaProBlack, Arial, sans-serif;
+        font-size: 7.5vw;
+        letter-spacing: 0.75vw;
+        line-height: 7.5vw;
+    }
+    hr{
+        border-bottom: 0.5vw solid $font_color;
+    }
+    h3{
+        font-size: 7.5vw;
+        letter-spacing: 0.15vw;
+        line-height: 7vw;
+    }
+    h4{
+        font-size: 6vw;
+        letter-spacing: 0.25vw;
+        line-height: 6vw;
+    }
+}
