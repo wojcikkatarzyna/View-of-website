@@ -3,6 +3,7 @@
 @import "fonts";
 @import "variables";
 @import "body";
+@import "view";
 @import "header";
 @import "main-part";
 @import "footer";
@@ -10,4 +11,7 @@
 .container{
     width: 74vw;
     margin: 0 auto;
+    @include desktop{
+        width: 300px;
+    }
 }

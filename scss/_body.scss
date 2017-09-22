@@ -1,31 +1,5 @@
 body{
-    background: $background_support_color;
-    background-image: url("../images/background.jpg");
-    background-size: contain;
-    width: 100%;
-    font-family: SofiaProRegular, Arial, sans-serif;
-    color: $font_color;
-    &:after{
-        content: "";
-        display: block;
-        position: absolute;
-        height: 109.5vw;
-        top: 0;
-        left: 0;
-        right: 0;
-        background: #94d9f4;
-        opacity: 0.6;
-      }
-      &:before{
-          content: "";
-          display: block;
-          position: absolute;
-          height: 13vw;
-          top: 109.5vw;
-          left: 0;
-          right: 0;
-          background: #7a54fc;
-          opacity: 0.6;
-          z-index: 1;
-        }
+    @include desktop{
+        background-image: url("../images/body-background.png");
+    }
 }
