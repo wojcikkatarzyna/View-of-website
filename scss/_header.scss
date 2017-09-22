@@ -3,8 +3,8 @@ header{
     text-align: center;
     padding-top: 1vw;
     @include desktop{
-        height: 170px;
-        padding-top: 25px;
+        min-height: 170px;
+        padding-top: 15px;
     }
     h1{
         font-family: SofiaProBlack, Arial, sans-serif;
@@ -40,9 +40,9 @@ header{
         letter-spacing: 0.15vw;
         line-height: 7vw;
         @include desktop{
-            font-size: 18px;
-            letter-spacing: 0.5vw;
-            line-height: 18px;
+            font-size: 26px;
+            letter-spacing: 2.5px;
+            line-height: 26px;
         }
     }
     h4{
@@ -50,9 +50,9 @@ header{
         letter-spacing: 0.25vw;
         line-height: 6vw;
         @include desktop{
-            font-size: 16px;
-            letter-spacing: 0.5vw;
-            line-height: 16px;
+            font-size: 24px;
+            letter-spacing: 1px;
+            line-height: 24px;
         }
     }
 }
