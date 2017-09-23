@@ -1,6 +1,9 @@
 main{
     text-align: center;
     height: 41vw;
+    @include desktop{
+        height: 330px;
+    }
     div.info{
         padding-top: 2.5vw;
         padding-bottom: 2.5vw;
@@ -8,6 +11,13 @@ main{
         font-size: 4.5vw;
         letter-spacing: 0.25vw;
         line-height: 4.5vw;
+        @include desktop{
+            padding: 32px 10px 12px 10px;
+            font-size: 25px;
+            letter-spacing: 2.5px;
+            line-height: 26px;
+            height: 122px;
+        }
     }
     form{
         display: flex;
@@ -16,6 +26,10 @@ main{
         align-content: space-between;
         padding: 0 1.5vw;
         height: 26vw;
+        @include desktop{
+            padding: 0 11px;
+            height: 208px;
+        }
         input[type="tel"]{
             width: 30%;
         }
@@ -34,9 +48,19 @@ main{
             font-size: 1.5vw;
             z-index: 2;
             opacity: 0.6;
+            @include desktop{
+                opacity: 1;
+                height: 36px;
+                box-shadow: 3px 3px 0px 0px rgba(0,0,0,0.5);
+                font-size: 12px;
+            }
             option{
                 background: rgba(182,225,242,0.8);
                 opacity: 0.6;
+                @include desktop{
+                    background: $input_background_color;
+                    opacity: 1;
+                }
             }
         }
         div.agreement{
@@ -44,14 +68,29 @@ main{
             padding-left: 2vw;
             z-index: 2;
             opacity: 0.6;
+            @include desktop{
+                padding-left: 30px;
+                opacity: 1;
+                text-align: left;
+                margin: 12px 0;
+            }
             input{
                 height: 2.25vw;
                 width: 2.25vw;
                 box-shadow: 0.25vw 0.25vw 0px 0px rgba(0,0,0,0.5);
+                @include desktop{
+                    height: 17px;
+                    width: 17px;
+                    box-shadow: 1px 1px 0px 0px rgba(0,0,0,0.5);
+                }
             }
             label{
                 font-size: 1vw;
                 padding-left: 2vw;
+                @include desktop{
+                    font-size: 8px;
+                    padding-left: 14px;
+                }
                 a{
                     color: $font_color;
                 }
@@ -68,7 +107,13 @@ main{
             color: $font_color;
             font-size: 2.5vw;
             opacity: 0.6;
+            @include desktop{
+                height: 52px;
+                margin: 0 75px;
+                box-shadow: 4px 4px 0px 0px rgba(0,0,0,0.5);
+                font-size: 20px;
+                opacity: 1;
+            }
         }
-
     }
 }
