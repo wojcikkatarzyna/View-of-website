@@ -30,6 +30,7 @@ header{
     }
     hr{
         border-top: 0.5vw solid $font_color;
+        margin: 3vw 0;
         @include desktop{
             border-top: 2px solid $font_color;
             margin: 13px 5px;

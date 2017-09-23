@@ -17,7 +17,7 @@
 
 @mixin boxshadow($value) {
     /* For IE 5.5 - 7 */
-    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=$value, Direction=135, Color='rgba(0,0,0,0.5)');
+    filter: "progid:DXImageTransform.Microsoft.Shadow(Strength="$value", Direction=135, Color='rgba(0,0,0,0.5)')";
 
     /* For IE 8 */
     -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength="$value", Direction=135, Color='rgba(0,0,0,0.5)')";
