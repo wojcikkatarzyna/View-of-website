@@ -1,6 +1,9 @@
 footer{
     height: 40vw;
     position: relative;
+    @include desktop{
+        height: 200px;
+    }
     img{
         position: absolute;
         bottom: 2vw;
@@ -8,5 +11,9 @@ footer{
         right: 0;
         margin: auto;
         width: 47vw;
+        @include desktop{
+            bottom: 45px;
+            width: 55%;
+        }
     }
 }
