@@ -21,12 +21,12 @@ main{
     }
     form{
         display: inline-block;
-        display: -webkit-flex;
-        display: -ms-flex;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-content: space-between;
+        // display: -webkit-flex;
+        // display: -ms-flex;
+        // display: flex;
+        // flex-wrap: wrap;
+        // justify-content: space-between;
+        // align-content: space-between;
         padding: 0 1.5vw;
         height: 26vw;
         @include desktop{
@@ -35,10 +35,28 @@ main{
         }
         input[type="tel"]{
             width: 30%;
+            margin-bottom: 12px;
+            @include desktop{
+                &:nth-of-type(2){
+                    margin-right: 5%;
+                    margin-left: 5%;
+                }
+            }
         }
         select, input[type="text"]{
             width: 47%;
             text-align-last:center;
+        }
+        select{
+            margin-right: 6%;
+            option{
+                background: rgba(182,225,242,0.8);
+                @include opacity(0.6, 60);
+                @include desktop{
+                    background: $input_background_color;
+                    @include opacity(1, 100);
+                }
+            }
         }
         input, select{
             height: 4.5vw;
@@ -57,14 +75,6 @@ main{
                 @include boxshadow(3px);
                 font-size: 12px;
             }
-            option{
-                background: rgba(182,225,242,0.8);
-                @include opacity(0.6, 60);
-                @include desktop{
-                    background: $input_background_color;
-                    @include opacity(1, 100);
-                }
-            }
         }
         div.agreement{
             width: 100%;
@@ -76,7 +86,7 @@ main{
             @include desktop{
                 padding-left: 29px;
                 @include opacity(1, 100);
-                margin: 12px 0;
+                margin: 24px 0;
             }
             input{
                 height: 2.25vw;
@@ -113,6 +123,7 @@ main{
             @include opacity(0.6, 60);
             @include desktop{
                 height: 52px;
+                width: 130px;
                 margin: 0 73px;
                 @include boxshadow(4px);
                 font-size: 20px;
