@@ -21,13 +21,7 @@ main{
     }
     form{
         display: inline-block;
-        // display: -webkit-flex;
-        // display: -ms-flex;
-        // display: flex;
-        // flex-wrap: wrap;
-        // justify-content: space-between;
-        // align-content: space-between;
-        padding: 0 1.5vw;
+        padding: 0 2vw;
         height: 26vw;
         @include desktop{
             padding: 0 11px;
@@ -35,12 +29,13 @@ main{
         }
         input[type="tel"]{
             width: 30%;
-            margin-bottom: 12px;
+            margin-bottom: 1vw;
+            &:nth-of-type(2){
+                margin-right: 5%;
+                margin-left: 5%;
+            }
             @include desktop{
-                &:nth-of-type(2){
-                    margin-right: 5%;
-                    margin-left: 5%;
-                }
+                margin-bottom: 12px;
             }
         }
         select, input[type="text"]{
@@ -82,7 +77,8 @@ main{
             z-index: 2;
             @include opacity(0.6, 60);
             text-align: left;
-            margin: 1.7vw 0;
+            margin-top: 1.7vw;
+            margin-bottom: 3.5vw;
             @include desktop{
                 padding-left: 29px;
                 @include opacity(1, 100);
@@ -100,6 +96,7 @@ main{
             }
             label{
                 font-size: 1.1vw;
+                vertical-align: bottom;
                 padding-left: 2.25vw;
                 @include desktop{
                     font-size: 9px;
@@ -107,12 +104,13 @@ main{
                 }
                 a{
                     color: $font_color;
+                    vertical-align: bottom;
                 }
             }
         }
         input[type="submit"]{
-            width: 100%;
-            height: 6vw;
+            width: 17vw;
+            height: 6.25vw;
             margin: 0 27vw;
             background: $button_color;
             border: transparent;
