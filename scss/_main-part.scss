@@ -20,6 +20,9 @@ main{
         }
     }
     form{
+        display: inline-block;
+        display: -webkit-flex;
+        display: -ms-flex;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
