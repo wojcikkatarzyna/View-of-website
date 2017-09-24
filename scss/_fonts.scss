@@ -1,15 +1,17 @@
 @font-face {
-	font-family: SofiaProBlack;
+	font-family: 'SofiaProBlack';
 	font-weight: normal;
 	font-style: normal;
 	src:
-		url('../fonts/sofiaproblack-webfont.woff2') format('woff2');
+			url('../fonts/SofiaProBlack.woff') format('woff'),
+			url('../fonts/sofiaproblack-webfont.woff2') format('woff2');
 }
 
 @font-face {
-	font-family: SofiaProRegular;
+	font-family: 'SofiaProRegular';
 	font-weight: normal;
 	font-style: normal;
 	src:
-		url('../fonts/sofiaproregular-webfont.woff2') format('woff2');
+			url('../fonts/SofiaProRegular.woff') format('woff'),
+			url('../fonts/sofiaproregular-webfont.woff2') format('woff2');
 }
