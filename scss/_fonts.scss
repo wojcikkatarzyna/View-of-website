@@ -1,17 +1,23 @@
 @font-face {
-	font-family: 'SofiaProBlack';
-	font-weight: normal;
-	font-style: normal;
-	src:
-			url('../fonts/SofiaProBlack.woff') format('woff'),
-			url('../fonts/sofiaproblack-webfont.woff2') format('woff2');
+  font-family: 'SofiaProBlack';
+  src: url('../fonts/sofiaproblack-webfont.eot');
+  src: url('../fonts/sofiaproblack-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/SofiaProBlack.ttf') format('truetype'),
+       url('../fonts/SofiaProBlack.svg#SofiaProBlack') format('svg'),
+       url('../fonts/SofiaProBlack.woff') format('woff'),
+       url('../fonts/sofiaproblack-webfont.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-	font-family: 'SofiaProRegular';
-	font-weight: normal;
-	font-style: normal;
-	src:
-			url('../fonts/SofiaProRegular.woff') format('woff'),
-			url('../fonts/sofiaproregular-webfont.woff2') format('woff2');
+  font-family: 'SofiaProRegular';
+  src: url('../fonts/sofiaproregular-webfont.eot');
+  src: url('../fonts/sofiaproregular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/SofiaProRegular.ttf') format('truetype'),
+       url('../fonts/SofiaProRegular.svg#SofiaProRegular') format('svg'),
+       url('../fonts/SofiaProRegular.woff') format('woff'),
+       url('../fonts/sofiaproregular-webfont.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
 }
